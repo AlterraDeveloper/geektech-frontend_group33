@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  color: blue;
+}
+
+textarea {
+  border: 6px solid blue;
+  outline: none;
+  width: 100%;
+  padding: 70px;
+  font-size: 56px;
+}
+
+.wrapper .title{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+}
+
+#limit{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 36px;
+
+}
+

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  gap: 5px
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #555;
+  transition: 2s ease;
+  box-shadow: 0 0 2px #000;
+}
+
+.cell:hover {
+	transition-duration: 0s;
+}
+
+/* .cell + .cell{
+    margin-right: 5px;
+} */
