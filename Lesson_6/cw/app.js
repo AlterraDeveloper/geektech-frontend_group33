@@ -14,7 +14,7 @@ for (let i = 0; i < cellsCount; i++) {
 }
 
 var cells = document.querySelectorAll(".cell");
-
+  
 function getRandomColor() {
   var colors = ["#e74c3c", "#8e44ad", "#3498db", "#e67e22", "#2ecc71"];
   var randomIndex = Math.floor(Math.random() * colors.length);
@@ -31,3 +31,18 @@ for (var cell of cells) {
     event.target.style.backgroundColor = "#555";
   });
 }
+
+function clearCells() {
+  wrapper.innerHTML = "";
+}
+
+function fillCells() {
+  for (let i = 0; i < cellsCount; i++) {
+    wrapper.appendChild(buildCell());
+  }
+}
+
+// setTimeout(clearCells, 3000);
+
+setInterval(fillCells, 1000);
+setInterval(clearCells, 2000);

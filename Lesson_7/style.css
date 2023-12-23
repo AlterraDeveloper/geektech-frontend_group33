@@ -1,0 +1,12 @@
+
+
+.circle{
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 100px;
+    color: blue;
+    font-size: 26px;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
